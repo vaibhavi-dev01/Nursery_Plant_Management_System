@@ -1,0 +1,90 @@
+<html>
+<head>
+	<title>🌱My Nursery</title>
+	<style>
+	body
+	{
+		background-image:url("/static/anan.jpg");
+		background-position:center;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+	#div1
+	{
+		height:50px;
+		width:170px;
+		z-index:-1;
+		margin-left:550px;
+	}
+	#hi
+	{
+		font-family:Helvetica;
+		font-size:35px;
+		color:white;
+		text-align:center;
+		text-shadow:2px 2px 1px blue;
+	
+	}
+	#div2
+	{
+		width:1270px;
+		height:400px;
+		background-color:white;
+		opacity:0.8;
+		justify-content:space-evenly;
+		margin-top:30px;
+		position:absolute;
+
+	}
+	#div2 h2
+	{
+		font-size:30px;
+		color:Darkgreen;
+		margin-left:40px;
+		font-style:bold;
+	}
+	#div2 #par
+	{
+		background-color:rgba(132, 188, 127, 1);
+		width:550px;
+		height:250px;
+		font-weight:bold;
+		margin-left:50px;
+		padding:5px;
+		font-family:Arial;
+		border-radius:0px 30px;
+		border:2px solid black;
+		box-shadow:2px 2px 6px red;
+		text-align:left;
+
+	}
+	#img1{
+		height:320px;
+		width:320px;
+		margin-left:800px;
+		margin-top:-310px;
+		border:4px solid black;
+		border-radius:10%;
+		position:sticky;
+	}
+	
+    </style>
+    </head>
+<body>
+      {%include 'main_nav.html'%}
+	  <div id="div1">
+			<h1 id="hi">About Us</h1>
+	  </div>
+	  <div id="div2">
+		<h2>🌳Why Choose Us</h2>
+		<div id="par">
+		To promote eco-friendly living by making plant care easy,<br> accessible, and enjoyable for everyone.<br> We aim to inspire a deeper connection with nature<br>through quality plants and sustainable gardening practices.<br>
+		<h3>1.100% eco-conscious practices</h3>
+		<h3>2.Friendly and knowledgeable staff</h3>
+		<h3>3.Plants grown with love and care</h3>
+		<h3>4.Quality guarantee on all our products</h3>
+		</div>
+		<img src="/static/pot1.jpg" id="img1">
+	  </div>
+</body>
+</html>

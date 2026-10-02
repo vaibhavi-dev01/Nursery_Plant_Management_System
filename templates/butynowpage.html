@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🌱My Nursery</title>
+    <style>
+        #big {
+            width: 500px;
+            height: auto;
+            border: 2px solid black;
+            margin-left: 400px;
+            margin-top: 50px;
+            border-radius: 20%;
+            background-color:lightgreen;
+            box-shadow: 7px 7px 2px black;
+            padding-bottom: 20px;
+        }
+        #ad {
+            width: 300px;
+            height: 100px;
+            margin-left: 100px;
+            margin-top: -40px;
+            border-radius: 10px;
+        }
+        #loadedImage {
+            display: none;
+            border-radius: 10px;
+            width: 1400px;
+            height: 700px;
+            margin-top: -900px;
+            margin-left: -90px;
+            border:2px solid black;
+        }
+        #message {
+            margin-left: 100px;
+            margin-top: 20px;
+            color: red;
+            font-weight: bold;
+        }
+        #em{
+            width:250px;
+            height:30px;
+            border-radius:10px;
+        }
+    </style>
+</head>
+<body background="/static/anan.jpg">
+    <div id="big">
+        <h1 align="center">🙏</h1>
+        <h1 align="center" style="margin-top:10px;font-size:50px;">Thank You!</h1>
+        <h3 style="margin-left:70px;">A confirmation has been sent to your email.<br>
+            Since you're here, join our list for discounts!<br></h3>
+        <form action=" " method="post">
+            {%csrf_token%}
+            <h3 style="margin-left:45px;margin-top:10px;">Email:<input type="email" name="email" id="em" required><br>
+            <h3 style="margin-left:20px; margin-top:50px;">Address:</h3>
+            <textarea id="ad" name="add" required></textarea>
+            <button type="submit" id="b1" style="margin-left:220px; margin-top:30px; padding:10px;border-radius:20%;">Confirm</button>
+        </form>
+    </div>
+
+
+</body>
+</html>

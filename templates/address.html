@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>🌱My Nursery</title>
+    <style>
+    body
+	{
+		background-position:center;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+    #cap{
+        font-size:50px;
+        padding:10px;
+        font-weight:bold;
+        color:black;
+        text-shadow:2px 2px 2px white;
+    }
+    #tb{
+        background-color:yelloworange;
+        color:black;
+        width:1000px;
+        padding:5px;
+       
+        border-radius:0px 10px;
+       
+    }
+    #tb #th
+    {
+        font-size:25px;
+    }
+    #tb #nm
+    {
+        font-weight:bold;
+    }
+    #nam{
+        background-color:lightcyan;
+        padding:10px;
+        margin-top:10px;
+    }
+    #mo
+    {
+        background-color:lightcyan;
+        margin-top:20px;
+
+    }
+    </style>
+<body>
+<table id="tb" border="1" align="center">
+    <caption id="cap">👤User Information</caption>
+    <tr id="th">
+        <th style="background-color:dodgerblue">Email</th>
+        <th style="background-color:dodgerblue">Address</th>
+    </tr>
+    {%for i in e %}
+        <tr align="center" id="nm">
+            <td id="nam">{{i.email}}</td>
+            <td id="mo">{{i.add}}</td>
+        </tr>
+    {%endfor%}
+
+</table> 
+</body>       
+</head>

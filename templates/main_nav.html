@@ -1,0 +1,75 @@
+<html>
+<head>
+    <style>
+	#nav
+	{
+		height:70px;
+		opacity: 0.7;
+		background-color:greenyellow;
+		display: flex;
+      	align-items: center;
+      	justify-content:space-between;
+      	padding:0 110px;
+		animation: slideDown 0.8s ease forwards;
+	}
+	@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 0.7;
+        transform: translateY(0);
+    }
+}
+
+	#pla
+	{
+		height:60px;
+		width:50px;
+		margin-left:-90px;
+		border-radius:30%;
+	}
+	ul	
+	{
+		margin-left:300px;
+	}
+	ul li
+	{
+		display:inline;
+		list-style: none;
+		line-height:65px;
+	}
+	ul li a
+	{
+		color:black;
+		text-decoration:none;
+		padding:10px;
+		margin-left:50px;
+		font-weight:bold;
+	}
+	ul li a:hover
+	{
+		background-color: black;
+		color:white;
+		border:2px solid white;
+		border-radius:20%;
+	}
+</style>
+</head>
+<center>
+<body>
+    <div id="nav">
+	<img src="/static/myplant.webp" id="pla"/>
+	<h2>MyPlanty</h2>
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/login">Login</a></li>
+		<li><a href="/signup">SignUp</a></li>
+		<li><a href="/about">About</a></li>
+		<li><a href="/us">Contact Us</a></li>
+	</ul>
+</div>
+</center>
+</body>
+</html>

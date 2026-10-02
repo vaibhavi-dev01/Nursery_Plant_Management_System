@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>🌱My Nursery</title>
+    <style>
+    #div{
+        border:2px solid black;
+        height:400px;
+        width:400px;
+        margin-left:430px; 
+        border-radius:10px 50px;
+        background-color:lightyellow;
+        box-shadow:2px 2px 5px red;
+    }
+    #in
+	{
+		margin-top:-5px;
+		padding:10px;
+		border:2px solid black;
+		border-radius:10px;	
+	}
+    #btn
+	{
+		height:40px;
+		width:70px;
+		background-color:greenyellow;
+		color:black;
+		font-size:15px;
+		border:3px solid white;
+		border-radius:10px;
+		margin-bottom:20px;
+        border:2px solid black;
+
+	}
+    </style>
+</head>
+<body bgcolor="lightgreen">
+    <h1 align="center" id="h1" style="font-size:40;text-shadow:3px 3px 3px white;">FEEDBACK FORM</h1>
+    <div id="div">
+    <form action="" method="post">
+		<center>
+		{%csrf_token%}
+        <h2>📞Give Feedback</h2><br>
+		<b>Name</b>:<input type="text" required   placeholder="Enter your name" name="nm" id="in"><br><br>
+        <b>Email</b>:<input type="email" required   placeholder="Enter valid email address" name="em" id="in"><br><br>
+        <b>Message</b>:<textarea required  id="in" name="fed"></textarea><br><br>
+		<button type="submit" id="btn" style="text-decoration:none; color:black;">Submit</button>
+	  </form>
+      {% if e1 %}
+        <p style="color:green; font-weight:bold;">{{ e1 }}</p>
+      {% endif %}
+        </center>	
+    </div>
+</body>
+</html>
